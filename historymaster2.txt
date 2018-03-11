@@ -1,0 +1,68 @@
+    1  pwd
+    2  cd app/hadoop/
+    3  ll
+    4  cd hadoop-2.7.5/
+    5  ll
+    6  cd etc/
+    7  ll
+    8  cd hadoop/
+    9  ll
+   10  nl yarn-site.xml 
+   11  nl hdfs-site.xml 
+   12  nl core-site.xml 
+   13  ifconfig 
+   14  lsof
+   15  netstat -nplt
+   16  jps
+   17  pwd
+   18  ll
+   19  nl hdfs-site.xml 
+   20  less hdfs-site.xml 
+   21  jps
+   22  jps 
+   23  pwd
+   24  cd ..
+   25  pwd
+   26  cd ..
+   27  ll
+   28  pwd
+   29  ll
+   30  sbin/hadoop-daemon.sh start namenode
+   31  jps 
+   32  ll
+   33  less logs/hadoop-hadoop-namenode-master2.out
+   34  less logs/hadoop-hadoop-namenode-master2.log 
+   35  ll
+   36  cd /home/hadoop/app/hadoop/
+   37  ll
+   38  cd tmp/
+   39  ll
+   40  cd dfs/
+   41  ll
+   42  less logs/hadoop-hadoop-namenode-master2.log 
+   43  less /home/hadoop/app/hadoop/hadoop-2.7.5/logs/hadoop-hadoop-namenode-master2.log 
+   44  ll
+   45  mkdir name
+   46  pwd
+   47  ll
+   48  pwd
+   49  cd ..
+   50  cd hadoop-2.7.5/
+   51  ll
+   52  sbin/hadoop-daemon.sh start namenode
+   53  jps 
+   54  less /home/hadoop/app/hadoop/hadoop-2.7.5/logs/hadoop-hadoop-namenode-master2.log 
+   55  jps
+   56  jps 
+   57  pwd
+   58  sbin/hadoop-daemon.sh start namenode
+   59  jps
+   60  sbin/hadoop-daemon.sh resourcemanager
+   61  sbin/hadoop-daemon.sh start resourcemanager
+   62  sbin/yarn-daemon.sh start resourcemanager
+   63  jps 
+   64  pwd
+   65  cd ..
+   66  pwd
+   67  cd ..
+   68  history >historymaster2.txt

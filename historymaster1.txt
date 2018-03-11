@@ -1,0 +1,99 @@
+    1  hdfs namenode -format
+    2  start-all.sh 
+    3  ifconfig 
+    4  stop-all.sh 
+    5  start-all.sh 
+    6  hostname
+    7  nl /etc/hosts
+    8  nl /etc/hostname 
+    9  nl /etc/sysconfig/network
+   10  /etc/rc.d/init.d/network restart
+   11  pwd
+   12  stop-all.sh 
+   13  pwd
+   14  cd app/hadoop/hadoop-2.7.5/
+   15  ll
+   16  cd etc/hadoop/
+   17  ll
+   18  pwd
+   19  vi hdfs-site.xml 
+   20  pwd
+   21  vi hdfs-site.xml 
+   22  pwd
+   23  ll
+   24  cd ..
+   25  ll
+   26  rm -rfv logs/
+   27  cd ..
+   28  pwd
+   29  ll
+   30  rm -rfv hdfs/*
+   31  rm -rfv tmp/*
+   32  hdfs namenode -format
+   33  pwd
+   34  ll
+   35  start-all.sh 
+   36  pwd
+   37  cd hadoop-2.7.5/
+   38  cd etc/hadoop/
+   39  ll
+   40  nl slaves 
+   41  hdfs fs -ls
+   42  hadoop fs -ls
+   43  hadoop fs mkdir a
+   44  hadoop fs -mkdir a
+   45  hadoop fs -mkdir /usr/hadoop/dir1
+   46  hadoop fs -ls
+   47  hadoop fs -ls /
+   48  hadoop fs -mkdir /dir
+   49  hadoop fs -ls
+   50  hadoop fs -ls /
+   51  stop-all.sh 
+   52  pwd
+   53  cd ..
+   54  ll
+   55  cd ..
+   56  pwd
+   57  ll
+   58  pwd
+   59  nl /etc/profile
+   60  ifconfig 
+   61  hostname
+   62  hdfs namenode -format
+   63  hdfs zkfc -formatZK
+   64  jps
+   65  start-dfs.sh 
+   66  start-yarn.sh
+   67  jps 
+   68  pwd
+   69  stop-dfs.sh 
+   70  stop-yarn.sh 
+   71  hdfs namenode -format
+   72  jps
+   73  start-dfs.sh 
+   74  jps 
+   75  jps
+   76  pwd
+   77  cd app/hadoop/
+   78  ll
+   79  pwd
+   80  ll tmp/
+   81  scp -r tmp master2:/home/hadoop/app/hadoop/
+   82  start-yarn.sh 
+   83  jps
+   84  hdfs haadmin -transitionToActive nn1 --forcemanual
+   85  hdfs haadmin -transitionToActive nn2 --forcemanual
+   86  hdfs haadmin -transitionToActive nn2
+   87  hdfs haadmin -transitionToActive nn2 --forcemanual
+   88  hdfs haadmin -transitionToStandby nn1 --forcemanual
+   89  history 
+   90  pwd
+   91  history >history.txt
+   92  ll
+   93  less history.txt 
+   94  history >historymaster1.txt
+   95  ll
+   96  pwd
+   97  cd ..
+   98  ll
+   99  history >historymaster1.txt

@@ -1,0 +1,237 @@
+    1  ll
+    2  zkServer.sh start
+    3  zkServer.sh status
+    4  ll
+    5  less zookeeper.out 
+    6  date
+    7  pwd
+    8  cd ..
+    9  ll
+   10  less zookeeper.out 
+   11  nl zookeeper.out 
+   12  pwd
+   13  ll
+   14  cd conf/
+   15  ll
+   16  nl zoo.cfg 
+   17  pwd
+   18  vi zoo.cfg 
+   19  pwd
+   20  zkServer.sh stop
+   21  zkServer.sh start
+   22  zkServer.sh status
+   23  ll
+   24  cd ..
+   25  pwd
+   26  ll
+   27  nl zookeeper.out 
+   28  pwd
+   29  cd conf
+   30  ll
+   31  nl zoo.cfg 
+   32  pwd
+   33  ll
+   34  nl zookeeper.out 
+   35  zkServer.sh status
+   36  jps
+   37  exit
+   38  pwd
+   39  zkServer.sh stop
+   40  pwd
+   41  ll
+   42  cd data/
+   43  ll
+   44  less zookeeper.out 
+   45  pwd
+   46  zkServer.sh start
+   47     pwd
+   48  ll
+   49  su
+   50  exit
+   51  pwd
+   52  ll
+   53  pwd
+   54  source /etc/profile
+   55  zkServer.sh start
+   56  zkServer.sh status
+   57  jps
+   58  zkCli.sh -server 127.0.0.1:2181
+   59  jps
+   60  zkServer.sh stop
+   61  jps
+   62  nl /etc/hosts
+   63  pwd
+   64  ll
+   65  cd conf/
+   66  ll
+   67  vi zoo.cfg 
+   68  pwd
+   69  cd ..
+   70  cd data/
+   71  ll
+   72  pwd
+   73  echo 1 >myid
+   74  ll
+   75  pwd
+   76  less myid 
+   77  pwd
+   78  scp -r /home/hadoop/app/hadoop/hadoop-2.7.5/app slave2:/home/hadoop/app/hadoop/hadoop-2.7.5/
+   79  scp -r /home/hadoop/app/hadoop/hadoop-2.7.5/app slave3:/home/hadoop/app/hadoop/hadoop-2.7.5/
+   80  pwd
+   81  su
+   82  whoami 
+   83  cd /home/hadoop/app/hadoop/hadoop-2.7.5/
+   84  ll
+   85  pwd
+   86  cd app/zookeeper/
+   87  ll
+   88  cd zookeeper-3.4.10
+   89  ll
+   90  pwd
+   91  vi conf/zoo.cfg 
+   92  pwd
+   93  ll
+   94  pwd
+   95  vi /etc/profile
+   96  su
+   97  jps
+   98  zkServer.sh status
+   99  jps
+  100  zkServer.sh staop
+  101  zkServer.sh stop
+  102  zkServer.sh start
+  103  zkServer.sh status
+  104  jps
+  105  netstat -nptl
+  106  ifconfig 
+  107  jps
+  108  zkServer.sh status
+  109  hostname
+  110  pwd
+  111  ll
+  112  pwd
+  113  nl zookeeper.out 
+  114  pwd
+  115  cd app/hadoop/hadoop-2.7.5/app/zookeeper/
+  116  ll
+  117  cd zookeeper-3.4.10
+  118  ll
+  119  cd data/
+  120  ll
+  121  less myid 
+  122  nl zookeeper.out 
+  123  date
+  124  cd ..
+  125  ll
+  126  cd conf
+  127  ll
+  128  nl zoo.cfg 
+  129  jps
+  130  zkServer.sh stop
+  131  vi zoo.cfg 
+  132  pwd
+  133  cd ..
+  134  ll
+  135  bin/zkServer.sh start
+  136  bin/zkServer.sh status
+  137  ll
+  138  nl zookeeper.out 
+  139  date
+  140  jps
+  141  nl /etc/hosts
+  142  nl /etc/hostname 
+  143  pwd
+  144  ll
+  145  whoami 
+  146  zkServer.sh status
+  147  jps
+  148  pwd
+  149  ll
+  150  cd data/
+  151  ll
+  152  rm zookeeper_server.pid 
+  153  ll
+  154  cd ..
+  155  zkServer.sh stop
+  156  zkServer.sh start
+  157  zkServer.sh status
+  158  jps
+  159  zkServer.sh stop
+  160  ll
+  161  cd data/
+  162  ll
+  163  pwd
+  164  zkServer.sh start
+  165  zkServer.sh status
+  166  jps
+  167  reboot 
+  168  su
+  169  pwd
+  170  ll
+  171  curl -O http://mirror.bit.edu.cn/apache/zookeeper/stable/zookeeper-3.4.10.tar.gz
+  172  ll
+  173  pwd
+  174  ll
+  175  mkdir -p /home/hadoop/app/hadoop/hadoop-2.7.5/app/zookeeper
+  176  pwd
+  177  mv zookeeper-3.4.10.tar.gz /home/hadoop/app/hadoop/hadoop-2.7.5/app/zookeeper/
+  178  cd  /home/hadoop/app/hadoop/hadoop-2.7.5/app/zookeeper/
+  179  pwd
+  180  ll
+  181  tar zxvf zookeeper-3.4.10.tar.gz 
+  182  pwd
+  183  ll
+  184  cd zookeeper-3.4.10
+  185  ll
+  186  pwd
+  187  ll
+  188  cd conf
+  189  pwd
+  190  ll
+  191  cp zoo_sample.cfg zoo.cfg 
+  192  less zoo.cfg 
+  193  pwd
+  194  cd ..
+  195  pwd
+  196  ll
+  197  mkdir data
+  198  ll
+  199  pwd
+  200  ifconfig 
+  201  pwd
+  202  less /etc/profile
+  203  source /etc/profile
+  204  ssh slave3
+  205  ll
+  206  cd app/hadoop/
+  207  ll
+  208  cd hadoop-2.7.5/
+  209  ll
+  210  pwd
+  211  jps
+  212  zkServer.sh start
+  213  zkServer.sh status
+  214  jps
+  215  zkServer.sh status
+  216  pwd
+  217  ll
+  218  sbin/hadoop-daemon.sh start journalnode
+  219  jps
+  220  jps 
+  221  jps
+  222  pwd
+  223  ll
+  224  cd ..
+  225  pwd
+  226  ll
+  227  cd ..
+  228  ll
+  229  cd ..
+  230  ll
+  231  nl /etc/profilei
+  232  nl /etc/profile
+  233  pwd
+  234  hostname
+  235  ifconfig 
+  236  pwd
+  237  history >historyslave1.txt
