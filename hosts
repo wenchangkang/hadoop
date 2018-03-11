@@ -1,0 +1,7 @@
+#127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+#::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+192.168.213.128 master1
+192.168.213.129 master2
+192.168.213.130 slave1
+192.168.213.131 slave2
+192.168.213.132 slave3
